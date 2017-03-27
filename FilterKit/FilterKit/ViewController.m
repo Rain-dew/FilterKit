@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "YLBoxView.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    YLBoxView *view = [[YLBoxView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 40) andTitles:@[@"第一第的的一的", @"第二的的一的", @"第三", @"第四"]];
+    [self.view addSubview:view];
 }
+
 
 
 - (void)didReceiveMemoryWarning {
